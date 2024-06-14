@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Profile</title>
+    <link rel="stylesheet" href="./CSS/styles4.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">Lancer</div>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button class="search-btn">&#128269;</button>
+        </div>
+        <a href="#" class="back-btn">Back</a>
+    </div>
+    <div class="profile-container">
+        <img src="Images/images.jpeg" alt="Profile Picture" class="profile-pic">
+        <h1>Your Profile Info</h1>
+        <p><strong>Username:</strong> <span id="username"></span></p>
+        <p><strong>First Name:</strong> <span id="first-name"></span></p>
+        <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Phone Number:</strong> <span id="phone-number"></span></p>
+        <p><strong>Role:</strong> <span id="role"></span></p>
+    </div>
+    <div class="create-post-btn-container">
+        <button class="create-post-btn" onclick="location.href='create-post.html'">Create Post</button>
+    </div>
+    <script src="profile.js"></script>
+</body>
+
+</html>
