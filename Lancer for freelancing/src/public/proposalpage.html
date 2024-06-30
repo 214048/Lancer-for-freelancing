@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./CSS/styles6.css">
+</head>
+<body>
+    <form id="proposalForm">
+        <input type="text" id="author" placeholder="Author" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <textarea id="description" placeholder="Description" required></textarea>
+        <button type="submit">Add Proposal</button>
+      </form>
+      
+      <script>
+        const form = document.getElementById('proposalForm');
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const author = document.getElementById('author').value;
+          const amount = document.getElementById('amount').value;
+          const description = document.getElementById('description').value;
+      
+          const response = await fetch('http://localhost:3000/api/proposals', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ author, amount, description })
+          });
+      
+          if (response.ok) {
+            const proposal = await response.json();
+            console.log('Proposal added:', proposal);
+          } else {
+            console.error('Failed to add proposal');
+          }
+        });
+      </script>
+</body>
+</html>
