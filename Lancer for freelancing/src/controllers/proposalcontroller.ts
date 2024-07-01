@@ -1,12 +1,22 @@
+import { getRepository } from 'typeorm';
 import { Request, Response } from 'express';
-import Proposal from '../models/proposalmodel';
+import { Proposal } from '../models/proposalmodel';
 
-export const addProposal = async (req: Request, res: Response): Promise<void> => {
+export const createProposal = async (req: Request, res: Response) => {
+  const { freelancerId, description, amount, status } = req.body;
+
   try {
-    const { author, amount, description } = req.body;
-    const newProposal = await Proposal.create({ author, amount, description });
-    res.status(201).json(newProposal);
+    const proposal = new Proposal();
+    proposal.freelancerId = freelancerId;
+    proposal.description = description;
+    proposal.amount = amount;
+    proposal.status = status;
+
+    const proposalRepository = getRepository(Proposal);
+    await proposalRepository.save(proposal);
+
+    res.status(201).send(proposal);
   } catch (error) {
-    res.status(500).json({ error: 'Failed to add proposal' });
+    res.status(400).send(error);
   }
 };

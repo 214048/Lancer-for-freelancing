@@ -6,6 +6,8 @@ import postroutes from './routes/postroutes';
 import authroutes from './routes/authroutes';
 import adminroutes from './routes/adminroutes';
 import proposalroutes from './routes/proposalroutes';
+import { createConnection } from 'typeorm';
+import 'reflect-metadata';
 
 const app = express();
 const PORT = 3000;
