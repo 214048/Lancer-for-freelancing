@@ -1,82 +1,152 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: #202275;
+}
+
+body {
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url("C:\Users\Lenovo\Lancer-for-freelancing\Lancer for freelancing\Images") no-repeat center center/cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background-color: #fff;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 header {
+    background-color: #29b6f6;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    color: #fff;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #000;
 }
 
-.login a {
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
-}
-
-main {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-}
-
-.content {
-    text-align: center;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-h1, h2, h3{
-    margin-bottom: 0;
-    padding:0;
-    font-weight: normal;
-}
-
-h1 {
-    font-size: 48px;
-}
-
-h2 {
-    font-size: 36px;
-    margin-top: 10px;
-}
-
-h3 {
-    font-size: 24px;
-    margin-top: 20px;
-    color: rgb(255, 255, 255);
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #000;
-    color: #fff;
+.search-bar input {
+    padding: 5px;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
 }
 
-button:hover {
-    background-color: #333;
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #0277bd;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.back-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.posts-section {
+    background-color: #e1f5fe;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.posts-section h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.post {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.post-author {
+    display: flex;
+    align-items: center;
+}
+
+.author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.author-info h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #757575;
+}
+
+.post-details p {
+    margin: 5px 0;
+}
+
+.post-description {
+    margin-bottom: 20px;
+}
+
+.proposal {
+    background-color: #f1f8e9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.proposal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.proposal-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accept-btn, .reject-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accept-btn {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.reject-btn {
+    background-color: #f44336;
+    color: #fff;
 }

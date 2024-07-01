@@ -1,11 +1,11 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url("C:/Users/adham/OneDrive/Desktop/Miggz/Images/567269.jpg") no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #003f6e;
 }
 
 .container {
@@ -26,7 +26,7 @@ header {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
+    color: #ffffff;
 }
 
 main {

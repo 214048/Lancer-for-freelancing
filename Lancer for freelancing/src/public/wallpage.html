@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lancer Job Post</title>
-    <link rel="stylesheet" href="./CSS/styles3.css">
+    <title>Lancer Wallpage</title>
+    <link rel="stylesheet" href="./CSS/styles5.css">
 </head>
 <body>
     <div class="container">
@@ -12,35 +12,44 @@
             <div class="logo">GigPals</div>
             <div class="search-bar">
                 <input type="text" placeholder="Search">
-                <button><img src="search-icon.png" alt="Search"></button>
+                <button>🔍</button>
             </div>
-            <div class="profile"><a href="#">My Profile</a></div>
+            <a href="#" class="profile-link">My Profile</a>
         </header>
         <main>
-            <div class="job-post">
-                <div class="job-header">
-                    <img src="profile-pic.png" alt="Profile Picture" class="profile-pic">
-                    <div class="job-title">
-                        <h2>Webdevelopment</h2>
-                        <p>Ahmed</p>
+            <div class="posts-section">
+                <h1>Your Posts</h1>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-author">
+                            <img src="https://via.placeholder.com/50" alt="Author" class="author-image">
+                            <div class="author-info">
+                                <h2>Ahmed</h2>
+                                <h3>Webdevelopment</h3>
+                            </div>
+                        </div>
+                        <div class="post-details">
+                            <p>Date: DD/MM/YYYY</p>
+                            <p>Hourly/Fixed</p>
+                            <p>1000$</p>
+                        </div>
                     </div>
-                    <div class="job-details">
-                        <p>DD/MM/YYYY</p>
-                        <p>Hourly/Fixed</p>
-                        <p>1000$</p>
+                    <p class="post-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tellus mauris, facilisis eget mollis quis, rhoncus in urna...
+                    </p>
+                    <div class="post-actions">
+                        <button class="add-proposal-btn">Add Proposal</button>
+                        <button class="save-post-btn">Save Post</button>
                     </div>
-                </div>
-                <div class="job-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tellus mauris, facilisis eget mollis quis, rhoncus in urna. In vitae mauris sollicitudin orci dignissim aliquam. Maecenas turpis felis, imperdiet vel pretium vitae, facilisis et est. Curabitur mollis molestie congue. Mauris purus sapien, placerat maximus lectus ac, varius feugiat nisi. Aliquam eget quam erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut odio lacus, ultricies sed feugiat sed, efficitur nec risus. Sed a iaculis risus. Morbi eros lorem, facilisis vitae facilisis nec, dapibus orci. Morbi pretium molestie vehicula. Fusce id faucibus nisl. Aenean ultricies diam eget lacus tristique, dapibus ultricies sapien maximus.</p>
-                </div>
-                <div class="job-actions">
-                    <button class="proposal-btn">Add Proposal</button>
-                    <button class="save-btn">Save Post</button>
-                </div>
-                <div class="comments">
-                    <p>Ali Mohammed</p>
-                    <p>1000$</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tellus mauris, facilisis eget mollis quis, rhoncus in urna. In vitae mauris sollicitudin orci dignissim aliquam. Maecenas turpis felis.</p>
+                    <div class="proposal">
+                        <div class="proposal-header">
+                            <h4>Ali Mohammed</h4>
+                            <p>1000$</p>
+                        </div>
+                        <p class="proposal-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tellus mauris, facilisis eget mollis quis, rhoncus in urna...
+                        </p>
+                    </div>
                 </div>
             </div>
         </main>

@@ -3,44 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saved Posts</title>
+    <title>Lancer Job-Posting</title>
     <link rel="stylesheet" href="./CSS/styles5.css">
 </head>
 <body>
-    <div class="header">
-        <div class="logo">Lancer</div>
-        <div class="search">
-            <input type="text" placeholder="Search">
-            <button class="search-btn">&#128269;</button>
-        </div>
-        <a href="#" class="back-btn">Back</a>
-    </div>
-    <div class="content">
-        <h1>Saved posts</h1>
-        <div class="post">
-            <div class="post-header">
-                <img src="Images/images.jpeg" alt="Profile Picture" class="profile-pic">
-                <div>
-                    <h2>Ahmed</h2>
-                    <h3>Webdevelopment</h3>
-                </div>
-                <div class="post-details">
-                    <p>DD/MM/YYYY</p>
-                    <p>Hourly/Fixed</p>
-                    <p>1000$</p>
+    <div class="container">
+        <header>
+            <div class="logo">GigPals</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button>🔍</button>
+            </div>
+            <a href="#" class="profile-link">My Profile</a>
+        </header>
+        <main>
+            <div class="posts-section">
+                <h1>Your Posts</h1>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-author">
+                            <img src="https://via.placeholder.com/50" alt="Author" class="author-image">
+                            <div class="author-info">
+                                <h2>Ahmed</h2>
+                                <h3>Webdevelopment</h3>
+                            </div>
+                        </div>
+                        <div class="post-details">
+                            <p>Date: DD/MM/YYYY</p>
+                            <p>Hourly/Fixed</p>
+                            <p>1000$</p>
+                        </div>
+                    </div>
+                    <p class="post-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tellus mauris, facilisis eget mollis quis, rhoncus in urna...
+                    </p>
+                    <div class="post-actions">
+                        <button class="add-proposal-btn">Add Proposal</button>
+                        <button class="save-post-btn">Save Post</button>
+                    </div>
+                    <div class="proposal">
+                        <div class="proposal-header">
+                            <h4>Ali Mohammed</h4>
+                            <p>1000$</p>
+                        </div>
+                        <p class="proposal-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tellus mauris, facilisis eget mollis quis, rhoncus in urna...
+                        </p>
+                    </div>
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tellus mauris, facilisis eget mollis quis, rhoncus in urna. In vitae mauris sollicitudin orci dignissim aliquam. Maecenas turpis felis, imperdiet vel pretium vitae, facilisis a est. Curabitur mollis molestie congue. Mauris purus sapien, placerat maximus lectus ac, varius feugiat nisi. Aliquam eget quam erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut odio lacus, ultricies sed feugiat sed, efficitur nec enim. Sed a iaculis risus. Morbi sed lorem tellus. Phasellus eu vestibulum orci. Morbi pretium molestie vehicula. Fusce id faucibus nisl. Aenean ultrices diam eget lacus tristique, dapibus ultricies sapien maximus.</p>
-            <div>
-            <button class="proposal-btn">Add Your Proposal</button>
-            <link rel="styles2" href="proposalpage.html">
-            </div>
-        </div>
-        <div class="comment">
-            <p><strong>Ali Mohammed</strong></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tellus mauris, facilisis eget mollis quis, rhoncus in urna. In vitae mauris sollicitudin orci dignissim aliquam. Maecenas turpis felis.</p>
-            <p>1000$</p>
-        </div>
+        </main>
     </div>
 </body>
 </html>

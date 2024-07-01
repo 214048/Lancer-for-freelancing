@@ -3,30 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Post</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Lancer Client-Post</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body>
-    <h1>Create a New Post</h1>
-    <form id="post-form">
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" required>
-
-        <label for="description">Description:</label>
-        <textarea id="description" name="description" required></textarea>
-
-        <label for="job-type">Job Type:</label>
-        <select id="job-type" name="jobType" required>
-            <option value="fixed">Fixed</option>
-            <option value="hourly">Hourly</option>
-        </select>
-
-        <label for="budget">Budget:</label>
-        <input type="number" id="budget" name="budget" required>
-
-        <button type="submit">Submit Post</button>
-    </form>
-
-    <script src="create-post.js"></script>
+    <div class="container">
+        <header>
+            <div class="logo">GigPals</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button>🔍</button>
+            </div>
+            <a href="#" class="back-link">Back</a>
+        </header>
+        <main>
+            <div class="posts-section">
+                <h1>Your Posts</h1>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-author">
+                            <img src="author-image.jpg" alt="Author" class="author-image">
+                            <div class="author-info">
+                                <h2>Ahmed</h2>
+                                <h3>Webdevelopment</h3>
+                            </div>
+                        </div>
+                        <div class="post-details">
+                            <p>Date: DD/MM/YYYY</p>
+                            <p>Hourly/Fixed</p>
+                            <p>1000$</p>
+                        </div>
+                    </div>
+                    <p class="post-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tellus mauris, facilisis eget mollis quis, rhoncus in urna...
+                    </p>
+                    <div class="proposal">
+                        <div class="proposal-header">
+                            <h4>Ali Mohammed</h4>
+                            <p>1000$</p>
+                        </div>
+                        <p class="proposal-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tellus mauris, facilisis eget mollis quis, rhoncus in urna...
+                        </p>
+                        <div class="proposal-actions">
+                            <button class="accept-btn">Accept Proposal</button>
+                            <button class="reject-btn">Refuse Proposal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
