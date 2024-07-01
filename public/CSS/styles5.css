@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background-color: #29b6f6;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #0da5fd;
+    color: #dc1f1f;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.profile-link {
+    color: #f70000;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.posts-section {
+    background-color: #00aeff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.posts-section h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.post {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.post-author {
+    display: flex;
+    align-items: center;
+}
+
+.author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.author-info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.author-info h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #757575;
+}
+
+.post-details p {
+    margin: 5px 0;
+}
+
+.post-description {
+    margin-bottom: 20px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.add-proposal-btn, .save-post-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.add-proposal-btn {
+    background-color: #1976d2;
+}
+
+.save-post-btn {
+    background-color: #43a047;
+}
+
+.proposal {
+    background-color: #f1f8e9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.proposal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.proposal-description {
+    color: #757575;
+}
